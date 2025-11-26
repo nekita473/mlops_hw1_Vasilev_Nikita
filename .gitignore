@@ -1,1 +1,3 @@
 /model.pkl
+mlartifacts/
+mlflow.db
