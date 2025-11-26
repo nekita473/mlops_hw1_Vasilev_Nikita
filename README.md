@@ -11,7 +11,6 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 git clone <this repo>
 cd mlops_hw1_Vasilev_Nikita
-
 dvc pull
 dvc repro -f
 ```
@@ -19,5 +18,7 @@ dvc repro -f
 
 В mlflow появится эксперимент с точностью 
 ```0.8666666666666667```
+
+Пайплайн состоит из обучения LogisticRegression на Iris датасете. Датасет кодирует имена классов с помощью LabelEncoder и откладывает 20% на тест. Для не 100% точности для проверки воспроизводимости кол-во итераций модели ограничено 20.
 
 ### Публичный read-only ключ для доступа на Yandex Cloud Backet добавлен умышленно для возможности запуска.
