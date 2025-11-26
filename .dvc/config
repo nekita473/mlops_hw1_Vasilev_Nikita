@@ -3,3 +3,5 @@
 ['remote "myremote"']
     url = s3://mlops-hw1-vasilev-nikita
     endpointurl = https://storage.yandexcloud.net
+    access_key_id = YCAJE9dfXLksZZ-nAfE-xkBsx
+    secret_access_key = YCPN5a6MhtncTlFFUkyNllYbwdl9LpMLRHKFGCdf
