@@ -1,5 +1,8 @@
 # Проект по использованию dvc и mlflow
-
+Установка зависимостей:
+```
+pip install -r requirements.txt
+```
 Запуск mflow server:
 ```
 mlflow ui --backend-store-uri sqlite:///mlflow.db
@@ -8,7 +11,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 git clone <this repo>
 cd mlops_hw1_Vasilev_Nikita
-pip install -r requirements.txt
+
 dvc pull
 dvc repro -f
 ```
@@ -17,4 +20,4 @@ dvc repro -f
 В mlflow появится эксперимент с точностью 
 ```0.8666666666666667```
 
-### Публичный read-only ключ для доступа на Yandex Cloud Backet добавлен умышленно для воспроизводимости запуска.
+### Публичный read-only ключ для доступа на Yandex Cloud Backet добавлен умышленно для возможности запуска.
