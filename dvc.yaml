@@ -1,12 +1,18 @@
 stages:
   prepare:
     cmd: python src/prepare.py
+    params:
+      - test_size
+      - random_state
     deps:
     - src/prepare.py
     outs:
     - data/processed
   train:
     cmd: python src/train.py
+    params:
+      - random_state
+      - max_iter
     deps:
     - data/processed
     - src/train.py

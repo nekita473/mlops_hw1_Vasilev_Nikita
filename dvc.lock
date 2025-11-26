@@ -5,8 +5,12 @@ stages:
     deps:
     - path: src/prepare.py
       hash: md5
-      md5: e8f06fc6b55840152c8952a791f04950
-      size: 537
+      md5: 5f396c2e5e3d4ff2aefcb5b838628156
+      size: 823
+    params:
+      params.yaml:
+        random_state: 42
+        test_size: 0.2
     outs:
     - path: data/processed
       hash: md5
@@ -23,8 +27,12 @@ stages:
       nfiles: 2
     - path: src/train.py
       hash: md5
-      md5: fa16979af589bcbc1fef10060300a819
-      size: 818
+      md5: 432a5a297e0d2e014b3d5eb8e3d48cf4
+      size: 1137
+    params:
+      params.yaml:
+        max_iter: 20
+        random_state: 42
     outs:
     - path: model.pkl
       hash: md5
